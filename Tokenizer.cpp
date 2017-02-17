@@ -5,7 +5,7 @@
 
 
 std::vector<Token *> &Tokenizer::tokenize() {
-    for (int i = 0; i < expression.length(); i++) {
+    for (unsigned int i = 0; i < expression.length(); i++) {
         char current = expression[i];
         if (!(current == ' ' || current == '\t')) {
             // If it's not a space

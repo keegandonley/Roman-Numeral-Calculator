@@ -29,7 +29,7 @@ int Number::intValue() {
         return intNumber;
     }
     std::vector<int> numericValues;
-    for (int i = 0; i < strNumber.size(); i++) {
+    for (unsigned int i = 0; i < strNumber.size(); i++) {
         int value = 0;
         switch (strNumber[i]) {
             case 'I': value = 1; break;
@@ -44,7 +44,7 @@ int Number::intValue() {
     }
 
     int runningTotal = 0;
-    for (int i = 0; i < strNumber.size(); i++) {
+    for (unsigned int i = 0; i < strNumber.size(); i++) {
         if (i == strNumber.size() - 1 )
             runningTotal += numericValues[i];
         else {
