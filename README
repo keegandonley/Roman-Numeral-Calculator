@@ -1,0 +1,41 @@
+Keegan Donley
+CS 315
+Project 01
+2/15/17
+
+This projects contains the following files:
+
+.
+├── InfixToPostfix.cpp
+├── InfixToPostfix.hpp
+├── Makefile
+├── Number.cpp
+├── Number.hpp
+├── README
+├── Token.cpp
+├── Token.hpp
+├── TokenIterator.cpp
+├── TokenIterator.hpp
+├── Tokenizer.cpp
+├── Tokenizer.hpp
+├── main.cpp
+├── symbolTable.cpp
+└── symbolTable.hpp
+
+- Using the command `make run` the project will be built and executed.
+- Infix expressions in the format: "a = XX + II * (M - IV)" can be entered, one
+  per line.
+- Entering a blank line will end the input sequence, and produce the output
+  for all statements entered.
+
+Everything works properly for this assignment. I've extensively tested the
+program's handling of input to ensure that invalid numerals aren't calculated.
+
+Some fatal errors (such as an invalid infix expressions) result in the termination
+of the program, while other non-fatal errors (such as an invalid numeral,
+i.e. XXXX or numerals >= MMMM) only result in that input line being skipped, with
+the user being allowed to continue entering expressions.
+
+Exit code 0: OK
+Exit code 1: expression was entered without a left-hand variable
+Exit code 2: expression wasn't an assignment
