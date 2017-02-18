@@ -61,10 +61,12 @@ int main() {
                 return 2;
             }
         }
+        delete tok;
         // Get another expression
         getline(std::cin, numerals);
     }
     symbols -> printTable();
+    delete symbols;
     return 0;
 }
 
